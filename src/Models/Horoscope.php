@@ -1,12 +1,34 @@
 <?php
 
 namespace Models;
-
+/**
+ * Class Horoscope
+ *
+ * Represents a horoscope entry with an ID, title, and content.
+ */
 class Horoscope {
+    /**
+     * @var string Unique identifier for the horoscope.
+     */
     private string $id;
+
+    /**
+     * @var string Title of the horoscope.
+     */
     private string $title;
+
+    /**
+     * @var string Content of the horoscope message.
+     */
     private string $content;
 
+    /**
+     * Horoscope constructor.
+     *
+     * @param string $id Unique identifier of the horoscope.
+     * @param string $title Title of the horoscope.
+     * @param string $content Content of the horoscope.
+     */
     public function __construct(string $id, string $title, string $content) {
         $this->id = $id;
         $this->title = $title;
